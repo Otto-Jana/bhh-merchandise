@@ -1,19 +1,89 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merchandise BHH-ITech</title>
-    <link rel="stylesheet" href="css/test_style.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="./static/js/index.js" defer></script>
 </head>
 <body>
-    <div class="d1">
-        <h1> Welcome to this merchandise shop test!</h1>
-	        <form action="php_scripts/handle_sql_requests.php" method="post">
-			<input type="text" placeholder="Jonas"  class="i1" name="name">
-       		 </form/>
-	<p class="desc">Please enter a name from the table below, to query a result from the MySQL database!</p>
-        <img src="static/chart_screenshot.png" alt="Error" class="g1">
+
+    <div id="sidebar">
+
+        <button class="toggle-menu">x</button>
+
+        <ul>
+            <li><a href="" class="toggle-menuu">Home</a></li>
+            <li><a href="" class="toggle-menuu">Suchen</a></li>
+            <li><a href="" class="toggle-menuu">Produkte</a></li>
+            <li><a href="" class="toggle-menuu">Warenkorb</a></li>
+            <li><a href="" class="toggle-menuu">Impressum</a></li>
+        </ul>
     </div>
+
+    <nav>
+        <!-- <img src="./topbarbackground.svg" id="topbar-background"> -->
+        
+        <div>
+            <img src="./_static/landingpageimages/menu.png" alt="Menu" id="menu-button" class="toggle-menu">
+            <img src="./_static/landingpageimages/logo.svg" alt="Logo">
+        </div>
+
+        <div>
+            <img src="./_static/landingpageimages/profile.png" alt="Profile">
+            <img src="./_static/landingpageimages/cart.png" alt="Profile">
+        </div>
+        
+    </nav>
+
+    <main>
+
+        <a id="view-more" href="#scroll-target">
+            MEHR ANSEHEN
+        </a>
+
+        <!-- <br>
+        <br>
+        <br>
+        <br> -->
+
+        <div id="slideshow">
+            <div id="content" style="margin-left: 0;">
+                <img src="./_static/landingpageimages/fruehjahrverkauf.svg" alt="FRÜHJAHR VERKAUF !!!!!!!!!!!!!!!!!!!!!!!!!">
+                <img src="./_static/landingpageimages/fruehjahrverkauf.svg" alt="FRÜHJAHR VERKAUF !!!!!!!!!!!!!!!!!!!!!!!!!">
+                <img src="./_static/landingpageimages/fruehjahrverkauf.svg" alt="FRÜHJAHR VERKAUF !!!!!!!!!!!!!!!!!!!!!!!!!">
+            </div>
+
+            <div id="buttons">
+                <button id="left-button">
+                    <img src="./_static/landingpageimages/arrowleft.svg" alt="Left">
+                </button>
+                <button id="right-button">
+                    <img src="./_static/landingpageimages/arrowright.svg" alt="Left">
+                </button>
+            </div>
+        </div>
+
+        <div id="items">
+            <a href="#"><img src="./_static/landingpageimages/topseller.svg" alt="Top Seller"></a>
+            <a href="#"><img src="./_static/landingpageimages/fuerdich.svg" alt="Fuer dich"></a>
+            <a href="#"><img src="./_static/landingpageimages/neueware.svg" alt="Neue ware"></a>
+        </div>
+        <div id="items">
+            <a href="#"><img src="./_static/landingpageimages/topseller.svg" alt="Top Seller"></a>
+            <a href="#"><img src="./_static/landingpageimages/fuerdich.svg" alt="Fuer dich"></a>
+            <a href="#"><img src="./_static/landingpageimages/neueware.svg" alt="Neue ware"></a>
+        </div>
+
+        <br id="scroll-target">
+
+
+        <footer>
+            hier steheen wichtige sachen !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        </footer>
+
+    </main>
 </body>
 </html>
