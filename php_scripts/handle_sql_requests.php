@@ -4,7 +4,7 @@
 	$username = "root";
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
-	$InputName = $_POST["name"];
+	$InputName = $_POST["transmitted_value"];
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -14,15 +14,27 @@
 	}
 	echo "Connection Succsess!";
 	
-	$sql = "SELECT * FROM test_table WHERE Vorname = '$InputName'";
-	$result = $conn->query($sql);
-	/*$stmt = mysqli_stmt_init($conn);
-	if ( ! mysqli_stmt_prepare($stmt, $sql) ) {
-		die(mysqli_error($conn));
+
+
+
+
+	//               GET NECESSARY TILE INFORMATION FROM DATABASE
+
+
+	if(transmitted_value = 1) //Best Sellers
+	{
+		$sql = "SELECT * FROM Products ORDER BY Sales DESC LIMIT 10";
+
 	}
-	mysqli_stmt_bind_param($stmt, "s", $InputName);
-	$result = mysqli_stmt_execute($stmt); */
+	else if(transmitted_value = 2) //For You
+	{
+		
+	}
+	else { //New Arrivals
+		$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
+	}
+
+	$result = $conn->query($sql);
 	$row =	$result->fetch_assoc();
-	print_r("Vorname: " . $row["Vorname"] . " Nachname: " . $row["Nachname"] . " Adresse: " . $row["Adresse"] . " Alter: " . $row["Nutzer_Alter"]);
 ?>
 

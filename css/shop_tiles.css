@@ -1,0 +1,115 @@
+body {
+    background-image: url(../_static/landingpageimages/background.svg);
+    background-size: cover;
+
+}
+
+.tile-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+.tile {
+    scale: 80%;
+    background-image: url(../static/imageregistry/Tile_Background_ImperialIceHoodie.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 380px;
+    flex-grow: 0;
+    margin-right: -40px;
+    
+
+}
+
+.tile__price {
+    position: relative;
+    left: 47%;
+    top: 3.5%;
+    font-size: 2.3rem;
+    width: 13rem;
+    text-align: center;
+    color: #3989a1;
+    margin-top: 0;
+    font-family: "acumin-pro";
+    font-weight: 700;
+}
+
+.tile__priceuvp {
+    position: relative;
+    left: 47%;
+    top: 5%;
+    font-size: 1.3rem;
+    text-decoration: line-through;
+    width: 13rem;
+    text-align: center;
+    color: #346795;
+    margin-bottom: 0;
+    font-family: "acumin-pro";
+    font-weight: 700;
+}
+
+.tile__pricewrapper {
+    position: relative;
+    top: 3.2%;
+    line-height: 19px;
+}
+.tile__metawrapper {
+    /* overflow: scroll; */
+    position: relative;
+    top: 54%;
+    left: 2%;
+    text-transform: uppercase;
+    line-height: 32px;
+}
+
+.tile__name {
+
+ font-size: 3rem;
+ margin: 0 0 0 0;
+ color: #3989a1;
+ font-family: "acumin-pro";
+ font-weight: 700;
+}
+
+.tile__slogan {
+ letter-spacing: 0.5rem;
+ margin: 0 0 0 0.4rem;
+ color: #346795;
+ font-family: "acumin-pro";
+ font-weight: 700;
+}
+
+.tile__colorcontainer {
+    display: flex;
+    flex-direction: row;
+    
+}
+.color {
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 2rem;
+    border-width: 4px;
+    border-color: rgb(27, 27, 27);
+    margin-right: 5px;
+    border-style: solid;
+}
+
+.color-grey {
+    background-color: rgb(78, 78, 78);
+}
+
+.color-dark-grey {
+    background-color: rgb(49, 49, 49);
+}
+
+
+.color-black {
+    background-color: black;
+}
+
+.color-white {
+    background-color: white;
+}
