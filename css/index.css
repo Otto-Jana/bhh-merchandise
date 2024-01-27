@@ -62,28 +62,58 @@ body > * {
   left: 0 !important;
 }
 
-nav {
+.nav-div {
+  height: fit-content;
+  width: fit-content;
+}
+
+.nav-div__container {
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -14rem;
+  gap: 73rem;
+}
+
+.nav-div__menu-and-logo {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+}
+
+.nav-div__cart-and-profile {
+  display: flex;
+
+}
+
+.nav-div__container__logo {
   height: 100px;
-  padding: 10px;
-  background: linear-gradient(90deg, rgb(51, 93, 145), rgb(59, 163, 169));
+  width: 400px;
+
+  flex-shrink: 1;
 }
-nav div {
-  display: flex;
-  align-items: center;
-  z-index: 1;
-}
-nav div img {
-  height: 90%;
-  width: auto;
-}
-nav div #menu-button {
+
+.nav-div__container__menu-button {
+  height: 100px;
+  width: 100px;
+
   filter: invert(1);
-  display: none;
+  flex-shrink: 1;
+
 }
+
+.nav-div__container__profile-icon {
+  height: 100px;
+  translate: 0%;
+  filter: invert(1);
+}
+
+.nav-div__container__cart-icon {
+  height: 100px;
+  translate: 0%;
+  filter: invert(1);
+}
+
 @media screen and (max-width: 750px) {
   nav #menu-button {
     display: inline !important;
@@ -141,7 +171,7 @@ html:not([data-scroll="0"]) #view-more {
   width: 90%;
   position: relative;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 #slideshow #content {
   width: 100%;
