@@ -7,6 +7,8 @@ const NewArrivalBttn = document.getElementById("new_arrivals_bttn").onclick = Ha
 
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
+    console.log("Succsessfuly set the cookie: tileType=1");
+    HandlePHPResponse();
 };
 
 function HandleForYouTrigger() {
@@ -19,16 +21,23 @@ function HandleNewArrivalTrigger() {
     window.location.href = "shop_tiles.html";
 };
 
-// function HandlePHPResponse() {
-//     window.location.href = "shop_tiles.html";
+function HandlePHPResponse() {
+    window.location.href = "shop_tiles.html";
     
-//     //get array with data and do a while loop to fill up an array of html elements
+    //get array with data and do a while loop to fill up an array of html elements
+    while(returnedRows == undefined || returnedRows == null)
+    {
+        console.log("No returned rows from the PHP Script yet.");
+    }
 
+    console.log("Row return: succsess!");
 //     array.forEach(content => {
 
 //         TileName = content[];
 //         document.getElementsByTagName("body").innerHTML + newTile;
 //     });
 // }
+
+};
 
 }
