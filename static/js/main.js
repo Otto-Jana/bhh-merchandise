@@ -25,7 +25,7 @@ function HandlePHPResponse() {
     window.location.href = "shop_tiles.html";
     
     //get array with data and do a while loop to fill up an array of html elements
-    while(returnedRows == undefined || returnedRows == null)
+    while(returnedRows == undefined)
     {
         console.log("No returned rows from the PHP Script yet.");
     }
