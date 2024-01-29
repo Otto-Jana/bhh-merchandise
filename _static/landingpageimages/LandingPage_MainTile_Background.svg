@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2093.03" height="509" viewBox="0 0 2093.03 509">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1230.515" y1="768" x2="1230.515" y2="259" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b9ea8"/>
+      <stop offset="0.986" stop-color="#336092"/>
+      <stop offset="1" stop-color="#336092"/>
+    </linearGradient>
+  </defs>
+  <path id="Rechteck_2_Kopie_3" data-name="Rechteck 2 Kopie 3" class="cls-1" d="M277,258.992H2184.04a93,93,0,0,1,93,93V675a93,93,0,0,1-93,93H277a93,93,0,0,1-93-93V351.992A93,93,0,0,1,277,258.992Z" transform="translate(-184 -259)"/>
+</svg>
