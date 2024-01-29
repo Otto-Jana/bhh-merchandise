@@ -1,4 +1,6 @@
 
+
+
 window.onload = function(){
 // Get all elements from index.html
 const TopSellerBttn = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
@@ -31,6 +33,8 @@ function HandlePHPResponse() {
     }
     window.location.href = "shop_tiles.html";
     console.log("Row return: succsess!");
+
+    window.globalReturnedRows = returnedRows; 
 //     array.forEach(content => {
 
 //         TileName = content[];
@@ -39,5 +43,4 @@ function HandlePHPResponse() {
 // }
 
 };
-
 }
