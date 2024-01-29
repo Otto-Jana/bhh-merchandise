@@ -1,11 +1,10 @@
-
-
-
 window.onload = function(){
 // Get all elements from index.html
 const TopSellerBttn = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
 const ForYouBttn = document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
 const NewArrivalBttn = document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
+};
+
 var returnedRows = "empty";
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
@@ -43,6 +42,5 @@ function HandlePHPResponse() {
 // }
 
 };
-}
 
 export { returnedRows };
