@@ -20,16 +20,16 @@ function HandleNewArrivalTrigger() {
     window.location.href = "shop_tiles.html";
 };
 
-function HandlePHPResponse() {
-    window.location.href = "shop_tiles.html";
+// function HandlePHPResponse() {
+//     window.location.href = "shop_tiles.html";
     
-    //get array with data and do a while loop to fill up an array of html elements
+//     //get array with data and do a while loop to fill up an array of html elements
 
-    array.forEach(content => {
+//     array.forEach(content => {
 
-        TileName = content[];
-        document.getElementsByTagName("body").innerHTML + newTile;
-    });
-}
+//         TileName = content[];
+//         document.getElementsByTagName("body").innerHTML + newTile;
+//     });
+// }
 
 }
