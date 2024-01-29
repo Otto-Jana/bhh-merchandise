@@ -37,6 +37,11 @@
 	$result = $conn->query($sql);
 	$row =	$result->fetch_assoc();
 	$returnedRows =  json_encode_($row);
-	echo "<script> returnedRows = $returnedRows; </script>";
 ?>
+
+<script>
+	var jsvar = JSON.parse('<?=$returnedRows?>');
+	console.log(jsvar);
+
+</script>
 

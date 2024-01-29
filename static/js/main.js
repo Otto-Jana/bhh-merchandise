@@ -9,17 +9,18 @@ var returnedRows = "empty";
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
     console.log("Succsessfuly set the cookie: tileType=1");
-    window.location.href = "handle_sql_requests.php?transmitted_value=" + 1; 
-    HandlePHPResponse();
+    window.location.href = "shop_tiles.html";
 };
 
 function HandleForYouTrigger() {
-    window.location.href = "handle_sql_requests.php?transmitted_value=" + 2;
+    document.cookie="tileType=2";
+    window.location.href = "handle_sql_requests.php?tileType=" + 2;
     window.location.href = "shop_tiles.html";
 };
 
 function HandleNewArrivalTrigger() {
-    window.location.href = "handle_sql_requests.php?transmitted_value=" + 3;
+    document.cookie="tileType=3";
+    window.location.href = "handle_sql_requests.php?tileType=" + 3;
     window.location.href = "shop_tiles.html";
 };
 
@@ -27,13 +28,7 @@ function HandlePHPResponse() {
  
 
     //get array with data and do a while loop to fill up an array of html elements
-    while(returnedRows == "empty")
-    {
-        console.log("No returned rows from the PHP Script yet.");
-    }
-    console.log("Row return: succsess!");
-    window.globalReturnedRows = returnedRows; 
-    window.location.href = "shop_tiles.html";
+
    
 //     array.forEach(content => {
 
