@@ -31,10 +31,10 @@ function HandlePHPResponse() {
     {
         console.log("No returned rows from the PHP Script yet.");
     }
-    window.location.href = "shop_tiles.html";
     console.log("Row return: succsess!");
-
     window.globalReturnedRows = returnedRows; 
+    window.location.href = "shop_tiles.html";
+   
 //     array.forEach(content => {
 
 //         TileName = content[];
