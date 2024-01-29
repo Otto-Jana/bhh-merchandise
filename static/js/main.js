@@ -5,9 +5,8 @@ const TopSellerBttn = document.getElementById("top_seller_bttn").onclick = Handl
 const ForYouBttn = document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
 const NewArrivalBttn = document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
 
-
 function HandleTopSellerTrigger() {
-    window.location.href = "handle_sql_requests.php?transmitted_value=" + 1;
+    document.cookie="tileType=1";
 };
 
 function HandleForYouTrigger() {
