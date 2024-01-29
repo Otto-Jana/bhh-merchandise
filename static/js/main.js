@@ -9,6 +9,7 @@ var returnedRows = "empty";
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
     console.log("Succsessfuly set the cookie: tileType=1");
+    window.location.href = "handle_sql_requests.php?transmitted_value=" + 1; 
     HandlePHPResponse();
 };
 
@@ -24,7 +25,7 @@ function HandleNewArrivalTrigger() {
 
 function HandlePHPResponse() {
  
-    
+
     //get array with data and do a while loop to fill up an array of html elements
     while(returnedRows == "empty")
     {
