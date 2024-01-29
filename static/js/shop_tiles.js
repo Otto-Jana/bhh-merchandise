@@ -1,1 +1,3 @@
-console.log(window.globalReturnedRows);
+import { returnedRows } from "./main.js";
+
+console.log(returnedRows);

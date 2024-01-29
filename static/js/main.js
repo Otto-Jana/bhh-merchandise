@@ -44,3 +44,5 @@ function HandlePHPResponse() {
 
 };
 }
+
+export { returnedRows };
