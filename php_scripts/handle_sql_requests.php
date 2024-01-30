@@ -91,7 +91,8 @@
 
 	
 		<script  type="text/javascript"> 
-			console.log("hello World");
+			var status = '<?= $gatheringStatus ?>';
+			console.log(variable);
 		</script>
     </body>
 
