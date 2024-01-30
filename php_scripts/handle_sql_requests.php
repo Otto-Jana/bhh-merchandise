@@ -35,11 +35,11 @@
 	$row =	$result->fetch_assoc();
 	$returnedRows =  json_encode_($row);
 
-	$file = fopen('../temp/tile-list.json','w');
-	fwrite($file, $returnedRows);
-	fclose($file);
+	// $file = fopen('../temp/tile-list.json','w');
+	// fwrite($file, $returnedRows);
+	// fclose($file);
 
-	echo "<script>  window.location.href ='../shop_tiles.html';</script>"
+	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
 
 
 ?>
