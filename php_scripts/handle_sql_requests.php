@@ -18,18 +18,18 @@
 	echo "successs";
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
-	if(InputValue = "1") //Best Sellers
-	{
-		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
+	// if(InputValue = "1") //Best Sellers
+	// {
+	// 	$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 
-	}
-	else if(InputValue = "2") //For You
-	{
+	// }
+	// else if(InputValue = "2") //For You
+	// {
 		
-	}
-	else { //New Arrivals
-		$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
-	}
+	// }
+	// else { //New Arrivals
+	// 	$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
+	// }
 
 	$result = $conn->query($sql);
 	$row =	$result->fetch_assoc();
