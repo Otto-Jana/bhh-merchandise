@@ -27,7 +27,7 @@
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 
 	}
-	echo " After If";
+	echo " After If. Statement: $sql";
 	// else if(InputValue = "2") //For You
 	// {
 		
