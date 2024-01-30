@@ -63,7 +63,7 @@
 
 
 
-    <div class="tile-container">
+    <div class="tile-container" id="tile-containerID">
 
         <div class="tile">
             <div class="tile__pricewrapper">
@@ -92,15 +92,13 @@
 			var obj = JSON.parse(variable);
 			var firstValue = obj[0][3];
 			console.log(firstValue);	
-			var val = document.getElementById("body");
+			var val = document.getElementById("tile-containerID");
 			var index = 0;
 
 			while (index >= 10)
 			{
 				val.innerHTML = 
 				(val.innerHTML + 
-				'<div class="tile-container">' +
-
 					'<div class="tile">' +
 						'<div class="tile__pricewrapper">' +
 						'	<h1 class="tile__priceuvp"> 15.99$ </h1>' +
