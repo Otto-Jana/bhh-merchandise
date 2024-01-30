@@ -59,7 +59,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/bsc2ugu.css">
     <script src="../static/js/shop_tiles.js"></script>
 </head>
-<body>
+<body id="body">
 
 
 
@@ -95,8 +95,9 @@
 			
 			var variable = '<?= $returnedRows ?>';
 			var obj = JSON.parse(variable);
-			var firstValue = obj[1];
-			console.log(firstValue);
+			var firstValue = obj[0];
+			console.log(firstValue);	
+			var val = document.getElementById("body");
 		</script>
     </body>
 
