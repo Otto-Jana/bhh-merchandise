@@ -14,7 +14,7 @@
 	{
 	die("Connection Error:" . mysqli_connect_error());
 	}
-	echo "successs";
+	// echo "successs";
 
 	
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
@@ -34,14 +34,14 @@
 		global $sql;
 		$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
 	}
-	echo " After If. Statement: $sql";
+	// echo " After If. Statement: $sql";
 
 	$result = $conn->query($sql);
-	echo "Ececuted statement";
+	// echo "Ececuted statement";
 	$row =	$result->fetch_assoc();
-	echo "Fetched Assoc";
+	// echo "Fetched Assoc";
 	$returnedRows =  json_encode($row);
-	echo "rows encoded to json: $returnedRows";
+	// echo "rows encoded to json: $returnedRows";
 	setcookie("returnedRows", $returnedRows);
 
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"

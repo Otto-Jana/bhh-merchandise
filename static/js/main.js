@@ -11,7 +11,6 @@ var returnedRows = "empty";
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
     console.log("Succsessfuly set the cookie: tileType=1");
-    window.location.href ="./php_scripts/handle_sql_requests.php";
     window.location.href ="./shop_tiles.html";
   
 };
