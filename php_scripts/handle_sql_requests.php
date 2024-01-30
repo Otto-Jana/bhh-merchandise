@@ -95,7 +95,7 @@
 			var val = document.getElementById("tile-containerID");
 			var index = 0;
 			console.log("Reached for loop");
-			while (index >= 10)
+			while (index < 10)
 			{
 				console.log("Enter loop.");
 			val.innerHTML = 
@@ -119,7 +119,7 @@
 					</div> `
 				);
 			index += 1;
-			}
+			};
 			
 		</script>
     </body>
