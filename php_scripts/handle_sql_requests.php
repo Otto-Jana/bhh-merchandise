@@ -4,7 +4,7 @@
 	$username = "root";
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
-	$InputValue = $_COOKIE["tiletype"];
+	$InputValue = $_COOKIE["tileType"];
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
