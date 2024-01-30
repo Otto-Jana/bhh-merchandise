@@ -24,6 +24,7 @@
 	if($InputValue == 1) //Best Sellers
 	{
 		echo "In statement";
+		global $sql;
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 
 	}
