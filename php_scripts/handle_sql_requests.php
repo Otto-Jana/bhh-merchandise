@@ -41,7 +41,7 @@
 	// echo "Ececuted statement";
 	$rows =	$result->fetch_assoc();
 	// echo "Fetched Assoc";
-	$returnedRows =  json_encode($rows);
+	// $returnedRows =  json_encode($rows);
 	// echo "rows encoded to json: $returnedRows";
 
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
@@ -93,10 +93,10 @@
 	
 		<script  type="text/javascript"> 
 			
-			var variable = '<?= $returnedRows ?>';
+			var variable = '<?= $rows ?>';
 			var obj = JSON.parse(variable);
 			var firstValue = obj[1];
-			console.log(firstValue);
+			console.log(variable);
 		</script>
     </body>
 
