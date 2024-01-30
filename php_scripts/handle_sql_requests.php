@@ -42,10 +42,52 @@
 	// echo "Fetched Assoc";
 	$returnedRows =  json_encode($row);
 	// echo "rows encoded to json: $returnedRows";
-	setcookie("returnedRows", $returnedRows);
 
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
-
-
 ?>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Sellers - BHHxITECH</title>
+    <link rel="stylesheet" href="css/shop_tiles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bsc2ugu.css">
+    <script src="./static/js/shop_tiles.js" defer></script>
+</head>
+<body>
+
+
+
+    <div class="tile-container">
+
+        <div class="tile">
+            <div class="tile__pricewrapper">
+            <h1 class="tile__priceuvp"> 15.99$ </h1>
+            <h1 class="tile__price"> 9.99$ </h1>
+            </div>
+            <div class="tile__metawrapper">
+            <div class="tile__colorcontainer">
+                <div class="color color-black"></div>
+                <div class="color color-white"></div>
+                <div class="color color-grey"></div>
+                <div class="color color-dark-grey"></div>
+            </div>  
+            </section>
+            <h2 class="tile__name">Imperial Ice</h2>
+            <p class="tile__slogan">SHOW YOUR ABILITIES</p>
+            </div>
+        </div>
+
+    
+        </div>
+  
+        
+    </div>
+
+
+
+    </body>
+</html>
