@@ -16,6 +16,10 @@
 	}
 	
 	echo "successs";
+
+	//               DEFAULT QUERY
+	$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
+	
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
 	// if(InputValue = "1") //Best Sellers
