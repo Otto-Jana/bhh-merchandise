@@ -39,9 +39,9 @@
 
 	$result = $conn->query($sql);
 	// echo "Ececuted statement";
-	$row =	$result->fetch_assoc();
+	$rows =	$result->fetch_all(MYSQLI_NUM):
 	// echo "Fetched Assoc";
-	$returnedRows =  json_encode($row);
+	$returnedRows =  json_encode($rows);
 	// echo "rows encoded to json: $returnedRows";
 
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
