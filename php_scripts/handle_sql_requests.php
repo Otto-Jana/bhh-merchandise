@@ -5,7 +5,7 @@
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
 	$InputValue = $_COOKIE["tileType"];
-	// $InputValue = (int)$InputValue;
+	 $InputValue = (int)$InputValue;
 	
 
 	 // Create connection
@@ -23,6 +23,7 @@
 
 	if(InputValue == 1) //Best Sellers
 	{
+		echo "In statement";
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 		$result = $conn->query($sql);
 		echo "Ececuted statement";
