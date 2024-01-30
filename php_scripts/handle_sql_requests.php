@@ -92,8 +92,9 @@
 
 	
 		<script  type="text/javascript"> 
-			var status = '<?= $gatheringStatus ?>';
-			console.log(status);
+			
+			var variable = '<?= $returnedRows ?>';
+			console.log(variable);
 		</script>
     </body>
 
