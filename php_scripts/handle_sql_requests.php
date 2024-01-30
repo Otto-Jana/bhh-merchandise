@@ -4,7 +4,7 @@
 	$username = "root";
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
-	$InputValue = $_GET["tiletype"];
+	//$InputValue = $_GET["tiletype"];
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -12,7 +12,7 @@
 	{
 	die("Connection Error:" . mysqli_connect_error());
 	}
-	echo "Connection Succsess! tile: $InputValue";
+	echo "Connection Succsess!";
 
 
 
@@ -21,22 +21,22 @@
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
 
-	if(InputValue = 1) //Best Sellers
-	{
-		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
+	// if(InputValue = 1) //Best Sellers
+	// {
+	// 	$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 
-	}
-	else if(InputValue = 2) //For You
-	{
+	// }
+	// else if(InputValue = 2) //For You
+	// {
 		
-	}
-	else { //New Arrivals
-		$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
-	}
+	// }
+	// else { //New Arrivals
+	// 	$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
+	// }
 
-	$result = $conn->query($sql);
-	$row =	$result->fetch_assoc();
-	$returnedRows =  json_encode_($row);
+	// $result = $conn->query($sql);
+	// $row =	$result->fetch_assoc();
+	// $returnedRows =  json_encode_($row);
 
 ?>
 

@@ -9,10 +9,8 @@ var returnedRows = "empty";
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
     console.log("Succsessfuly set the cookie: tileType=1");
-    $.ajax({type: "GET", url: "../../php_scripts/handle_sql_requests.php", data: { tiletype: "1"},
-    succsess: function() {
-        console.log("Executed successfully.");
-    }});
+    window.location.href = window.location.href = "handle_sql_requests.php";
+  
 };
 
 function HandleForYouTrigger() {
