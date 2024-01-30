@@ -45,6 +45,7 @@
 	// echo "rows encoded to json: $returnedRows";
 
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
+	$gatheringStatus = "1";
 ?>
 
 
