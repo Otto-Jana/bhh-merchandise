@@ -57,7 +57,7 @@
     <title>Top Sellers - BHHxITECH</title>
     <link rel="stylesheet" href="../css/shop_tiles.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsc2ugu.css">
-    <script src="../static/js/shop_tiles.js" defer></script>
+    <script src="../static/js/shop_tiles.js"></script>
 </head>
 <body>
 
@@ -91,13 +91,13 @@
 
 
 	
-		<script  type="text/javascript"> 
+		<script  type="text/javascript" id="newRows"> 
 			
 			var variable = '<?= $returnedRows ?>';
 			var obj = JSON.parse(variable);
 			var firstValue = obj[1];
 			console.log(firstValue);
-
+			document.getEleme
 			var bodyElement = document.getElementByTag("body");
 			bodyElement.innerHTML = bodyElement.innerHTML + "<p> Hello </p>";
 		</script>
