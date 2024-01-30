@@ -7,6 +7,7 @@
 	$InputValue = $_COOKIE["tileType"];
 	$InputValue = (int)$InputValue;
 	$sql = "empty";
+	$gatheringStatus = "0";
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -90,4 +91,15 @@
 
 
     </body>
+
+	<script> 
+	var gatheringStatus = "<?= $gatheringStatus ?>";
+	while(gatheringStatus != "1")
+	{
+		gatheringStatus = "<?= $gatheringStatus ?>";
+	}
+
+	var returnedRows = "<?= $returnedRows ?>";
+	console.log(returnedRows);
+	</script>
 </html>
