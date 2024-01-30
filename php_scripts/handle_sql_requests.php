@@ -98,6 +98,7 @@
 			var firstValue = obj[0];
 			console.log(firstValue);	
 			var val = document.getElementById("body");
+			val.innerHTML = val.innerHTML + "<p> New Entry </p>";
 		</script>
     </body>
 
