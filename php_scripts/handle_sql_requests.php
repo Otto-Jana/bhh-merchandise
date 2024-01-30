@@ -94,8 +94,8 @@
 		<script  type="text/javascript"> 
 			
 			var variable = '<?= $rows ?>';
-			var obj = JSON.parse(variable);
-			var firstValue = obj[1];
+			// var obj = JSON.parse(variable);
+			// var firstValue = obj[1];
 			console.log(variable);
 		</script>
     </body>
