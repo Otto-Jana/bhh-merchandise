@@ -36,7 +36,9 @@
 	// }
 
 	$result = $conn->query($sql);
+	echo "Ececuted statement";
 	$row =	$result->fetch_assoc();
+	echo "Fetched Assoc";
 	$returnedRows =  json_encode_($row);
 
 	echo "rows encoded to json";
