@@ -15,6 +15,7 @@
 	die("Connection Error:" . mysqli_connect_error());
 	}
 	
+	echo "successs";
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
 	if(InputValue = "1") //Best Sellers
