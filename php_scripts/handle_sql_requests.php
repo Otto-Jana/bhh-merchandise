@@ -27,7 +27,7 @@
 
 	}
 	echo " After If. Statement: $sql";
-	else if(InputValue == 2) //For You
+	else if($InputValue == 2) //For You
 	{
 		
 	}
