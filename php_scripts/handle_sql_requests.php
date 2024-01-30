@@ -4,7 +4,7 @@
 	$username = "root";
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
-	$InputValue = $_COOKIE["tiletype"];
+	$InputValue = $_COOKIE["tileType"];
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -12,7 +12,7 @@
 	{
 	die("Connection Error:" . mysqli_connect_error());
 	}
-	echo "Connection Succsess! Cookiename: $InputValue";
+	echo "<script> import { returnedRows } from './main.js;' console.log(returnedRows); </script>";
 
 
 

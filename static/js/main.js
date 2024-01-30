@@ -1,3 +1,5 @@
+
+
 window.onload = function(){
 // Get all elements from index.html
 const TopSellerBttn = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
