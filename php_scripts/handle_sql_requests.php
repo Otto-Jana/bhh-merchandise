@@ -39,7 +39,7 @@
 
 	$result = $conn->query($sql);
 	// echo "Ececuted statement";
-	$rows =	$result->fetch_all():
+	$rows =	$result->fetch_assoc();
 	// echo "Fetched Assoc";
 	$returnedRows =  json_encode($rows);
 	// echo "rows encoded to json: $returnedRows";
@@ -94,7 +94,9 @@
 		<script  type="text/javascript"> 
 			
 			var variable = '<?= $returnedRows ?>';
-			console.log(variable);
+			var obj = JSON.parse(variable);
+			var firstValue = obj.1;
+			console.log(firstValue);
 		</script>
     </body>
 
