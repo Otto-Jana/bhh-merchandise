@@ -67,26 +67,21 @@
 
         <div class="tile">
             <div class="tile__pricewrapper">
-            <h1 class="tile__priceuvp"> 15.99$ </h1>
-            <h1 class="tile__price"> 9.99$ </h1>
-            </div>
-            <div class="tile__metawrapper">
-            <div class="tile__colorcontainer">
-                <div class="color color-black"></div>
-                <div class="color color-white"></div>
-                <div class="color color-grey"></div>
-                <div class="color color-dark-grey"></div>
-            </div>  
-            </section>
-            <h2 class="tile__name">Imperial Ice</h2>
-            <p class="tile__slogan">SHOW YOUR ABILITIES</p>
-            </div>
-        </div>
-
-    
-        </div>
-  
-        
+				<h1 class="tile__priceuvp"> 15.99$ </h1>
+				<h1 class="tile__price"> 9.99$ </h1>
+				</div>
+				<div class="tile__metawrapper">
+					<div class="tile__colorcontainer">
+						<div class="color color-black"></div>
+						<div class="color color-white"></div>
+						<div class="color color-grey"></div>
+						<div class="color color-dark-grey"></div>
+					</div>  
+				<h2 class="tile__name">Imperial Ice</h2>
+				<p class="tile__slogan">SHOW YOUR ABILITIES</p>
+				</div>
+        	</div>
+        </div> 
     </div>
 
 
@@ -95,10 +90,38 @@
 			
 			var variable = '<?= $returnedRows ?>';
 			var obj = JSON.parse(variable);
-			var firstValue = obj[0];
+			var firstValue = obj[0][3];
 			console.log(firstValue);	
 			var val = document.getElementById("body");
-			val.innerHTML = val.innerHTML + "<p> New Entry </p>";
+			var index = 0;
+
+			while (index >= 10)
+			{
+				val.innerHTML = 
+				(val.innerHTML + 
+				'<div class="tile-container">' +
+
+					'<div class="tile">' +
+						'<div class="tile__pricewrapper">' +
+						'	<h1 class="tile__priceuvp"> 15.99$ </h1>' +
+							'<h1 class="tile__price"> ${obj[index][3]} </h1>' +
+						'	</div>' +
+							'<div class="tile__metawrapper">' +
+								'<div class="tile__colorcontainer">' +
+									'<div class="color color-black"></div>' +
+									'<div class="color color-white"></div>' +
+									'<div class="color color-grey"></div>' +
+									'<div class="color color-dark-grey"></div>' +
+								'</div>  ' +
+							'<h2 class="tile__name">Imperial Ice</h2>' +
+							'<p class="tile__slogan">SHOW YOUR ABILITIES</p>' +
+							'</div>' +
+						'</div>' +
+					'</div> ' +
+				'</div>');
+				index += 1;
+			}
+			
 		</script>
     </body>
 
