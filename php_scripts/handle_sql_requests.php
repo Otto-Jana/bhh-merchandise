@@ -97,6 +97,7 @@
 			console.log("Reached for loop");
 			while (index >= 10)
 			{
+				console.log("Enter loop.");
 			val.innerHTML = 
 				(val.innerHTML + 
 					`<div class="tile">
