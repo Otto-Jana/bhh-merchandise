@@ -26,7 +26,6 @@
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 
 	}
-	echo " After If. Statement: $sql";
 	else if($InputValue == 2) //For You
 	{
 		
@@ -35,6 +34,7 @@
 		global $sql;
 		$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
 	}
+	echo " After If. Statement: $sql";
 
 	$result = $conn->query($sql);
 	echo "Ececuted statement";
