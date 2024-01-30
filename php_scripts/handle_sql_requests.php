@@ -96,7 +96,7 @@
 			var variable = '<?= $rows ?>';
 			// var obj = JSON.parse(variable);
 			// var firstValue = obj[1];
-			console.log(variable);
+			console.log(variable[1]);
 		</script>
     </body>
 
