@@ -14,10 +14,8 @@
 	{
 	die("Connection Error:" . mysqli_connect_error());
 	}
-	
 	echo "successs";
 
-	//               DEFAULT QUERY
 	
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
@@ -29,13 +27,14 @@
 
 	}
 	echo " After If. Statement: $sql";
-	// else if(InputValue = "2") //For You
-	// {
+	else if(InputValue == 2) //For You
+	{
 		
-	// }
-	// else { //New Arrivals
-	// 	$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
-	// }
+	}
+	else { //New Arrivals
+		global $sql;
+		$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
+	}
 
 	$result = $conn->query($sql);
 	echo "Ececuted statement";
@@ -43,10 +42,7 @@
 	echo "Fetched Assoc";
 	$returnedRows =  json_encode($row);
 	echo "rows encoded to json: $returnedRows";
-
-	// $file = fopen('../temp/tile-list.json','w');
-	// fwrite($file, $returnedRows);
-	// fclose($file);
+	setcookie("returnedRows", $returnedRows);
 
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
 
