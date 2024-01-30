@@ -89,17 +89,17 @@
     </div>
 
 
+	
+		<script  type="text/javascript"> 
+			var gatheringStatus = "<?= $gatheringStatus ?>";
+				while(gatheringStatus != "1")
+				{
+					gatheringStatus = "<?= $gatheringStatus ?>";
+				}
 
+			var returnedRows = "<?= $returnedRows ?>";
+			console.log(returnedRows);
+		</script>
     </body>
 
-	<script> 
-	var gatheringStatus = "<?= $gatheringStatus ?>";
-	while(gatheringStatus != "1")
-	{
-		gatheringStatus = "<?= $gatheringStatus ?>";
-	}
-
-	var returnedRows = "<?= $returnedRows ?>";
-	console.log(returnedRows);
-	</script>
 </html>
