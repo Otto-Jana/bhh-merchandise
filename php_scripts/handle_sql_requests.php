@@ -42,7 +42,7 @@
 	echo "Fetched Assoc";
 	$returnedRows =  json_encode($row);
 	echo "rows encoded to json: $returnedRows";
-	// setcookie("returnedRows", $returnedRows);
+	setcookie("returnedRows", $returnedRows);
 
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
 
