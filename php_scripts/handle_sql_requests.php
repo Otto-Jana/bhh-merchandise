@@ -39,9 +39,9 @@
 
 	$result = $conn->query($sql);
 	// echo "Ececuted statement";
-	$rows =	$result->fetch_assoc();
+	$rows =	$result->fetch_assoc(MSQLI_NUM);
 	// echo "Fetched Assoc";
-	// $returnedRows =  json_encode($rows);
+	$returnedRows =  json_encode($rows);
 	// echo "rows encoded to json: $returnedRows";
 
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
@@ -93,10 +93,10 @@
 	
 		<script  type="text/javascript"> 
 			
-			var variable = '<?= $rows ?>';
-			// var obj = JSON.parse(variable);
-			// var firstValue = obj[1];
-			console.log(variable[1]);
+			var variable = '<?= $returnedRows ?>';
+			var obj = JSON.parse(variable);
+			var firstValue = obj[1];
+			console.log(firstValue);
 		</script>
     </body>
 
