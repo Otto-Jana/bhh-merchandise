@@ -9,13 +9,17 @@ var returnedRows = "empty";
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
     console.log("Succsessfuly set the cookie: tileType=1");
-    window.location.href = "shop_tiles.html";
+    $.ajax({type: "GET", url: "../../php_scripts/handle_sql_requests.php", data: { tiletype: "1"},
+    succsess: function() {
+        console.log("Executed successfully.");
+    }});
 };
 
 function HandleForYouTrigger() {
     document.cookie="tileType=2";
     window.location.href = "handle_sql_requests.php?tileType=" + 2;
     window.location.href = "shop_tiles.html";
+
 };
 
 function HandleNewArrivalTrigger() {

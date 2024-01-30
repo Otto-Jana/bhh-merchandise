@@ -4,7 +4,7 @@
 	$username = "root";
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
-	$InputValue = $_COOKIE["tileType"];
+	$InputValue = $_GET["tiletype"];
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -12,8 +12,8 @@
 	{
 	die("Connection Error:" . mysqli_connect_error());
 	}
-	echo "Connection Succsess!";
-	
+	echo "Connection Succsess! tile: $InputValue";
+
 
 
 
@@ -37,11 +37,6 @@
 	$result = $conn->query($sql);
 	$row =	$result->fetch_assoc();
 	$returnedRows =  json_encode_($row);
+
 ?>
-
-<script>
-	var jsvar = JSON.parse('<?=$returnedRows?>');
-	console.log(jsvar);
-
-</script>
 
