@@ -6,6 +6,7 @@
 	$dbname = "merchandise_shop";
 	$InputValue = $_COOKIE["tileType"];
 	$InputValue = (int)$InputValue;
+	$sql = "empty";
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -24,13 +25,6 @@
 	{
 		echo "In statement";
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
-		$result = $conn->query($sql);
-		echo "Ececuted statement";
-		$row =	$result->fetch_assoc();
-		echo "Fetched Assoc";
-		$returnedRows =  json_encode($row);
-	
-		echo "rows encoded to json";
 
 	}
 	// else if(InputValue = "2") //For You
@@ -41,7 +35,12 @@
 	// 	$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
 	// }
 
-
+	$result = $conn->query($sql);
+	echo "Ececuted statement";
+	$row =	$result->fetch_assoc();
+	echo "Fetched Assoc";
+	$returnedRows =  json_encode($row);
+	echo "rows encoded to json";
 
 	// $file = fopen('../temp/tile-list.json','w');
 	// fwrite($file, $returnedRows);
