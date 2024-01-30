@@ -5,6 +5,7 @@
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
 	$InputValue = $_COOKIE["tileType"];
+	$sql = "empty";
 	// $InputValue = (int)$InputValue;
 	
 
