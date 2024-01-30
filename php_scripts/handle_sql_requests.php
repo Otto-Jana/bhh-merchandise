@@ -5,7 +5,7 @@
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
 	$InputValue = $_COOKIE["tileType"];
-	$InputValue = (int)$InputValue;
+	// $InputValue = (int)$InputValue;
 	
 
 	 // Create connection
@@ -17,12 +17,12 @@
 	
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
-	if(InputValue = 1) //Best Sellers
+	if(InputValue = "1") //Best Sellers
 	{
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 
 	}
-	else if(InputValue = 2) //For You
+	else if(InputValue = "2") //For You
 	{
 		
 	}
