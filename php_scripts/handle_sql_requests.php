@@ -42,7 +42,7 @@
 	$row =	$result->fetch_assoc();
 	echo "Fetched Assoc";
 	$returnedRows =  json_encode($row);
-	echo "rows encoded to json";
+	echo "rows encoded to json: $returnedRows";
 
 	// $file = fopen('../temp/tile-list.json','w');
 	// fwrite($file, $returnedRows);
