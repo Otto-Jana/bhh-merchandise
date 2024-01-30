@@ -91,14 +91,7 @@
 
 	
 		<script  type="text/javascript"> 
-			var gatheringStatus = "<?= $gatheringStatus ?>";
-				while(gatheringStatus != "1")
-				{
-					gatheringStatus = "<?= $gatheringStatus ?>";
-				}
-
-			var returnedRows = "<?= $returnedRows ?>";
-			console.log(returnedRows);
+			console.log("hello World");
 		</script>
     </body>
 
