@@ -92,7 +92,7 @@
 	
 		<script  type="text/javascript"> 
 			var status = '<?= $gatheringStatus ?>';
-			console.log(variable);
+			console.log(status);
 		</script>
     </body>
 
