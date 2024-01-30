@@ -97,9 +97,6 @@
 			var obj = JSON.parse(variable);
 			var firstValue = obj[1];
 			console.log(firstValue);
-			document.getEleme
-			var bodyElement = document.getElementByTag("body");
-			bodyElement.innerHTML = bodyElement.innerHTML + "<p> Hello </p>";
 		</script>
     </body>
 
