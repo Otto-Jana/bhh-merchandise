@@ -39,7 +39,7 @@
 
 	$result = $conn->query($sql);
 	// echo "Ececuted statement";
-	$rows =	$result->fetch_assoc(MSQLI_NUM);
+	$rows =	$result->fetch_all(MSQLI_NUM);
 	// echo "Fetched Assoc";
 	$returnedRows =  json_encode($rows);
 	// echo "rows encoded to json: $returnedRows";
