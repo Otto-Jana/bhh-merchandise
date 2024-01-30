@@ -5,7 +5,6 @@
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
 	$InputValue = $_COOKIE["tileType"];
-	$sql = "empty";
 	// $InputValue = (int)$InputValue;
 	
 
@@ -25,7 +24,13 @@
 	if(InputValue = "1") //Best Sellers
 	{
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
-		echo "set value";
+		$result = $conn->query($sql);
+		echo "Ececuted statement";
+		$row =	$result->fetch_assoc();
+		echo "Fetched Assoc";
+		$returnedRows =  json_encode($row);
+	
+		echo "rows encoded to json";
 
 	}
 	// else if(InputValue = "2") //For You
@@ -36,13 +41,7 @@
 	// 	$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
 	// }
 
-	$result = $conn->query($sql);
-	echo "Ececuted statement";
-	$row =	$result->fetch_assoc();
-	echo "Fetched Assoc";
-	$returnedRows =  json_encode($row);
 
-	echo "rows encoded to json";
 
 	// $file = fopen('../temp/tile-list.json','w');
 	// fwrite($file, $returnedRows);
