@@ -5,7 +5,7 @@
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
 	$InputValue = $_COOKIE["tileType"];
-	
+	$InputValue = (int)$InputValue;
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -20,7 +20,7 @@
 	
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
-	if(InputValue == "1") //Best Sellers
+	if($InputValue == 1) //Best Sellers
 	{
 		echo "In statement";
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
