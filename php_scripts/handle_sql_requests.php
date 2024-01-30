@@ -18,15 +18,15 @@
 	echo "successs";
 
 	//               DEFAULT QUERY
-	$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 	
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
-	// if(InputValue = "1") //Best Sellers
-	// {
-	// 	$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
+	if(InputValue = "1") //Best Sellers
+	{
+		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
+		echo "set value";
 
-	// }
+	}
 	// else if(InputValue = "2") //For You
 	// {
 		
