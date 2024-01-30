@@ -35,6 +35,8 @@
 	$row =	$result->fetch_assoc();
 	$returnedRows =  json_encode_($row);
 
+	echo "rows encoded to json";
+
 	// $file = fopen('../temp/tile-list.json','w');
 	// fwrite($file, $returnedRows);
 	// fclose($file);
