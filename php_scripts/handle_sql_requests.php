@@ -21,7 +21,7 @@
 	
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
-	if(InputValue = "1") //Best Sellers
+	if(InputValue == "1") //Best Sellers
 	{
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
 		$result = $conn->query($sql);
