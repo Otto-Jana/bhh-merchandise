@@ -4,7 +4,7 @@
 	$username = "root";
 	$password = "040BeruflicheHochschule";
 	$dbname = "merchandise_shop";
-	//$InputValue = $_GET["tiletype"];
+	$InputValue = $_COOKIE["tiletype"];
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -12,7 +12,7 @@
 	{
 	die("Connection Error:" . mysqli_connect_error());
 	}
-	echo "Connection Succsess!";
+	echo "Connection Succsess! Cookiename: $InputValue";
 
 
 

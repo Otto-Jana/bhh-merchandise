@@ -1,0 +1,1 @@
+window.location.href = "handle_sql_requests.php?tileType=" + 2;
