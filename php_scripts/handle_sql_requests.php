@@ -26,7 +26,7 @@
 		global $sql;
 		global $sql_images;
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
-		$sql_images = "SELECT image_path FROM image_paths WHERE productID  IN (SELECT productID FROM product ORDER BY sellingScore DESC) LIMIT 10";
+		$sql_images = "SELECT image_path from (SELECT image_path, x.sellingScore from image_paths INNER JOIN (SELECT productID, sellingScore from product ORDER BY sellingScore DESC LIMIT 10)as x ON image_paths.productID = x.productID) as y ORDER BY sellingScore DESC";
 
 	}
 	else if($InputValue == 2) //For You
@@ -83,7 +83,7 @@
 			var obj = JSON.parse(variable);
 			var image_rows = '<?= $returnedImageRows ?>';
 			var image_obj = JSON.parse(image_rows);
-			
+
 			var firstValue = obj[0][3];
 			console.log(firstValue);	
 			var val = document.getElementById("tile-containerID");
