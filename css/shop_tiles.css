@@ -10,6 +10,7 @@ body {
     position: fixed;
     top: 0%;
     z-index: 15;
+    translate: -180px;
   }
   
   #nav-div__topper-bar {
@@ -80,12 +81,13 @@ body {
     translate: 0%;
     filter: invert(1);
   }
-  
+
 .tile-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: auto;
+    margin-top: 180px;
 }
 
 .tile {
