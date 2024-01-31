@@ -7,7 +7,9 @@
 	$InputValue = $_COOKIE["tileType"];
 	$InputValue = (int)$InputValue;
 	$sql = "empty";
+	$sql_images = "empty";
 	$gatheringStatus = "0";
+	$sqlImageAmount = 0;
 
 	 // Create connection
 	$conn = mysqli_connect(hostname: $host, username: $username, password: $password, database: $dbname);
@@ -15,16 +17,16 @@
 	{
 	die("Connection Error:" . mysqli_connect_error());
 	}
-	// echo "successs";
 
 	
 	//               GET NECESSARY TILE INFORMATION FROM DATABASE
 
 	if($InputValue == 1) //Best Sellers
 	{
-		// echo "In statement";
 		global $sql;
+		global $sql_images;
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
+		$sql_images = "SELECT image_path FROM image_paths WHERE productID  IN (SELECT productID FROM product ORDER BY sellingScore DESC) LIMIT 10";
 
 	}
 	else if($InputValue == 2) //For You
@@ -44,6 +46,11 @@
 	$returnedRows =  json_encode($rows);
 	// echo "rows encoded to json: $returnedRows";
 
+	$image_result = $conn->query($sql_images);
+	// echo "Ececuted statement";
+	$image_rows =	$image_result->fetch_all();
+	// echo "Fetched Assoc";
+	$returnedImageRows =  json_encode($image_rows);
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
 	$gatheringStatus = "1";
 ?>
@@ -74,21 +81,32 @@
 			
 			var variable = '<?= $returnedRows ?>';
 			var obj = JSON.parse(variable);
+			var image_rows = '<?= $returnedImageRows ?>';
+			var image_obj = JSON.parse(image_rows);
+			
 			var firstValue = obj[0][3];
 			console.log(firstValue);	
 			var val = document.getElementById("tile-containerID");
 			var index = 0;
 			console.log("Reached for loop");
+			
+			
+			
+			
 			while (index < 10)
 			{
 			console.log("Enter loop.");
+			
 			if (obj[index] == null)
 			{
 				break;
 			}
+			
+			var tile_image_location = "";
+			
 			val.innerHTML = 
 				(val.innerHTML + 
-					`<div class="tile">
+					`<div class="tile" style="background-image: url(${ image_obj[index] })">
 						<div class="tile__pricewrapper">
 							<h1 class="tile__priceuvp"> 15.99$ </h1>
 							<h1 class="tile__price"> ${ obj[index][3] } </h1>
@@ -100,8 +118,8 @@
 									<div class="color color-grey"></div>
 									<div class="color color-dark-grey"></div>
 								</div>  
-							<h2 class="tile__name">Imperial Ice</h2>
-							<p class="tile__slogan">SHOW YOUR ABILITIES</p>
+							<h2 class="tile__name">${ obj[index][1] }</h2>
+							<p class="tile__slogan">${ obj[index][5] }</p>
 							</div>
 						</div>
 					</div> `
