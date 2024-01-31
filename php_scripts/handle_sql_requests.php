@@ -68,7 +68,22 @@
 </head>
 <body id="body">
 
+<div class="nav-div">
+            <!-- <img src="./topbarbackground.svg" id="topbar-background"> -->
+                <img src="_static/landingpageimages/TopperBar.png" id="nav-div__topper-bar">
+                    <div class="nav-div__container">
+                        <div class="nav-div__menu-and-logo">
+                            <img src="./_static/landingpageimages/menu.png" alt="Menu" id="menu-buttom" class="nav-div__container__menu-button">
+                            <a href="index.html"><img src="./_static/landingpageimages/logo.svg" alt="Logo" class="nav-div__container__logo"></a>
+                        </div>
 
+                        <input class="nav-div__container__search" placeholder="Imperial Ice Hoodie">
+                        <div class="nav-div__cart-and-profile">
+                            <img src="./_static/landingpageimages/profile.png" alt="Profile" class="nav-div__container__profile-icon">
+                           <a href="shopping_cart.html"> <img src="./_static/landingpageimages/cart.png" alt="Profile" class="nav-div__container__cart-icon" > </a>
+                        </div>
+                    </div>
+        </div>
 
     <div class="tile-container" id="tile-containerID">
 

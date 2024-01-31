@@ -4,6 +4,83 @@ body {
 
 }
 
+.nav-div {
+    height: fit-content;
+    width: fit-content;
+    position: fixed;
+    top: 0%;
+    z-index: 15;
+  }
+  
+  #nav-div__topper-bar {
+    margin-top: -30px;
+  }
+  .nav-div__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -12rem;
+    gap: 36rem;
+  }
+  
+  .nav-div__menu-and-logo {
+    display: flex;
+  
+  }
+  
+  .nav-div__cart-and-profile {
+    display: flex;
+  
+  }
+  
+  .nav-div__container__logo {
+    height: 90px;
+    width: 340px;
+  
+    flex-shrink: 1;
+  }
+  
+  .nav-div__container__menu-button {
+    height: 70px;
+    width: 70px;
+    padding-top: 6px;
+    padding-right: 10px;
+    filter: invert(1);
+    flex-shrink: 1;
+  
+  }
+  
+  .nav-div__container__search {
+    width: 420px;
+    height: 35px;
+    border-radius: 50px;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 3px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    margin-left: -290px;
+    margin-top: -5px;
+  }
+  
+  .nav-div__container__search::-webkit-input-placeholder {
+    color: white;
+  }
+  
+  .nav-div__container__profile-icon {
+    height: 60px;
+    translate: 0%;
+    filter: invert(1);
+    padding-right: 2.5rem;
+  }
+  
+  .nav-div__container__cart-icon {
+    height: 60px;
+    translate: 0%;
+    filter: invert(1);
+  }
+  
 .tile-container {
     display: flex;
     flex-direction: row;
