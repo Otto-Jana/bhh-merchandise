@@ -106,7 +106,7 @@ body {
 .tile:hover {
     transform: scale(1.025);
   }
-  
+
 .login-window {
     margin-top: 180px;
     height: 658px;
@@ -205,3 +205,25 @@ body {
 .color-white {
     background-color: white;
 }
+
+footer {
+    height: 100px;
+    width: 100%;
+    background: black;
+    backdrop-filter: blur(10px);
+    opacity: 0.99;
+    color: white;
+    display: grid;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 80px;
+  }
+  
+  footer a {
+    color: inherit;
+    font-family: "acumin-pro";
+    font-weight: 700;
+    text-decoration: none;
+  }

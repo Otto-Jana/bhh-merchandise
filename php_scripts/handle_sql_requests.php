@@ -90,7 +90,12 @@
 
     </div>
 
-
+	
+	<footer>
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">About Us</a>
+     </footer>
 	
 		<script  type="text/javascript" id="newRows"> 
 			
