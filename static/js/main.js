@@ -25,7 +25,7 @@ function HandleForYouTrigger() {
 function HandleNewArrivalTrigger() {
     document.cookie="tileType=3";
     window.location.href = "handle_sql_requests.php?tileType=" + 3;
-    window.location.href = "shop_tiles.html";
+    window.location.href ="./php_scripts/handle_sql_requests.php";
 };
 
 function HandlePHPResponse() {
