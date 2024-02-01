@@ -8,7 +8,6 @@ var button1 = document.getElementById("top_seller_bttn").onclick = HandleTopSell
 console.log("Setup all triggers");
 };
 
-var returnedRows = "empty";
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
     console.log(document.cookie);
