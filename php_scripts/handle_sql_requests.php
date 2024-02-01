@@ -23,6 +23,7 @@
 
 	if($InputValue == 1) //Best Sellers
 	{
+		echo "best seller";
 		global $sql;
 		global $sql_images;
 		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
@@ -34,6 +35,7 @@
 		
 	}
 	else { //New Arrivals
+		echo "new arrival";
 		global $sql;
 		global $sql_images;
 		$sql = "SELECT * FROM product ORDER BY productID ASC LIMIT 100";
@@ -55,6 +57,7 @@
 	$returnedImageRows =  json_encode($image_rows);
 	// echo "<script>  window.location.href ='../shop_tiles.html';</script>"
 	$gatheringStatus = "1";
+
 ?>
 
 
