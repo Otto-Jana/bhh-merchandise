@@ -1,6 +1,6 @@
 
 
-
+window.onload = function () {
 // Get all elements from index.html
 var button1 = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
 var button2 = document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
@@ -29,3 +29,4 @@ function HandleNewArrivalTrigger() {
     window.location.href ="./php_scripts/handle_sql_requests.php";
 };
 
+};
