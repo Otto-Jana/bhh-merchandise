@@ -5,6 +5,7 @@ window.onload = function(){
 const TopSellerBttn = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
 const ForYouBttn = document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
 const NewArrivalBttn = document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
+console.log("Setup all triggers");
 };
 
 var returnedRows = "empty";
