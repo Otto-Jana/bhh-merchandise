@@ -2,7 +2,7 @@
 
 window.onload = function(){
 // Get all elements from index.html
-const TopSellerBttn = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
+const TopSellerBttn = document.getElementById("top_seller_bttn").onclick = HandleNewArrivalTrigger;
 const ForYouBttn = document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
 const NewArrivalBttn = document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
 console.log("Setup all triggers");
