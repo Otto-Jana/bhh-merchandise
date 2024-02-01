@@ -23,6 +23,7 @@ function HandleForYouTrigger() {
 };
 
 function HandleNewArrivalTrigger() {
+    console.log("Succsessfuly set the cookie: tileType=3");
     document.cookie="tileType=3";
     console.log("Succsessfuly set the cookie: tileType=3");
     window.location.href ="./php_scripts/handle_sql_requests.php";
@@ -42,5 +43,3 @@ function HandlePHPResponse() {
 // }
 
 };
-
-export { returnedRows };
