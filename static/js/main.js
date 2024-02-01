@@ -3,8 +3,8 @@
 
 // Get all elements from index.html
 var button1 = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
-// document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
-// document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
+document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
+document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
 console.log("Setup all triggers");
 
 
