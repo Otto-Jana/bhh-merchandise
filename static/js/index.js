@@ -2,10 +2,7 @@ leftButton = document.getElementById("left-button");
 rightButton = document.getElementById("right-button");
 slideshowcontent = document.getElementById("content");
 // Get all elements from index.html
-var button1 = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
-document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
-document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
-console.log("Setup all triggers");
+
 
 let prevSlide = 0;
 let slideBlock = false;
@@ -77,5 +74,10 @@ function HandleNewArrivalTrigger() {
     console.log("Succsessfuly set the cookie: tileType=3");
     window.location.href ="./php_scripts/handle_sql_requests.php";
 };
+
+button1 = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
+button2 = document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
+button3 = document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
+console.log("Setup all triggers");
 
  
