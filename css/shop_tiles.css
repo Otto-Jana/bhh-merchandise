@@ -10,7 +10,7 @@ body {
     position: fixed;
     top: 0%;
     z-index: 15;
-    translate: -180px;
+    translate: -273px;
   }
   
   #nav-div__topper-bar {
@@ -103,6 +103,15 @@ body {
 
 }
 
+.login-window {
+    margin-top: 180px;
+    height: 658px;
+    width: 650px;
+    background-image: url(../static/imageregistry/LoginPage_LoginWindow.svg);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
 .tile__price {
     position: relative;
     left: 47%;
