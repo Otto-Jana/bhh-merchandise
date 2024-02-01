@@ -31,14 +31,3 @@ function HandleNewArrivalTrigger() {
 };
 
  
-
-    //get array with data and do a while loop to fill up an array of html elements
-
-   
-//     array.forEach(content => {
-
-//         TileName = content[];
-//         document.getElementsByTagName("body").innerHTML + newTile;
-//     });
-// }
-
