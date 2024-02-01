@@ -1,7 +1,6 @@
 leftButton = document.getElementById("left-button");
 rightButton = document.getElementById("right-button");
 slideshowcontent = document.getElementById("content");
-// Get all elements from index.html
 
 
 let prevSlide = 0;
@@ -53,11 +52,15 @@ Array.from(document.getElementsByClassName("toggle-menu")).forEach(element => {
 
 
 
+
+
+
+
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
     console.log(document.cookie);
     console.log("Succsessfuly set the cookie: tileType=1");
-    window.location.href ="./php_scripts/handle_sql_requests.php";
+    window.location.href ="./login.html";
   
 };
 
@@ -69,15 +72,9 @@ function HandleForYouTrigger() {
 };
 
 function HandleNewArrivalTrigger() {
-
-    document.cookie="tileType=3";
     console.log("Succsessfuly set the cookie: tileType=3");
-    window.location.href ="./php_scripts/handle_sql_requests.php";
+    document.cookie="tileType=3";
+    window.location.href ="./profile_overview.html";
 };
-
-button1 = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
-button2 = document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
-button3 = document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
-console.log("Setup all triggers");
 
  
