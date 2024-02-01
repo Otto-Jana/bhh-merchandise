@@ -2,7 +2,7 @@
 
 window.onload = function(){
 // Get all elements from index.html
-document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
+var button1 = document.getElementById("top_seller_bttn").onclick = HandleTopSellerTrigger;
 // document.getElementById("fuer_dich_bttn").onclick = HandleForYouTrigger;
 // document.getElementById("new_arrivals_bttn").onclick = HandleNewArrivalTrigger;
 console.log("Setup all triggers");
@@ -11,6 +11,7 @@ console.log("Setup all triggers");
 var returnedRows = "empty";
 function HandleTopSellerTrigger() {
     document.cookie="tileType=1";
+    console.log(document.cookie);
     console.log("Succsessfuly set the cookie: tileType=1");
     window.location.href ="./php_scripts/handle_sql_requests.php";
   
