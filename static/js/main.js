@@ -16,9 +16,9 @@ function HandleTopSellerTrigger() {
 };
 
 function HandleForYouTrigger() {
-    document.cookie="tileType=2";
-    window.location.href = "handle_sql_requests.php?tileType=" + 2;
-    window.location.href = "shop_tiles.html";
+    document.cookie="tileType=3";
+    console.log("Succsessfuly set the cookie: tileType=2");
+    window.location.href ="./php_scripts/handle_sql_requests.php";
 
 };
 

@@ -35,7 +35,9 @@
 	}
 	else { //New Arrivals
 		global $sql;
-		$sql = "SELECT * FROM Products ORDER BY Date_Added DESC LIMIT 50";
+		global $sql_images;
+		$sql = "SELECT * FROM product ORDER BY productID ASC LIMIT 100";
+		$sql_images = "SELECT image_path from image_paths where productID IN (SELECT productID FROM product ORDER BY productID DESC) ORDER BY productID DESC";
 	}
 	// echo " After If. Statement: $sql";
 
