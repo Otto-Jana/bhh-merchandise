@@ -34,10 +34,14 @@
 		
 	}
 	else { //New Arrivals
+		// global $sql;
+		// global $sql_images;
+		// $sql = "SELECT * FROM product ORDER BY productID ASC LIMIT 100";
+		// $sql_images = "SELECT image_path from image_paths where productID IN (SELECT productID FROM product ORDER BY productID DESC) ORDER BY productID DESC";
 		global $sql;
 		global $sql_images;
-		$sql = "SELECT * FROM product ORDER BY productID ASC LIMIT 100";
-		$sql_images = "SELECT image_path from image_paths where productID IN (SELECT productID FROM product ORDER BY productID DESC) ORDER BY productID DESC";
+		$sql = "SELECT * FROM product ORDER BY sellingScore DESC LIMIT 10";
+		$sql_images = "SELECT image_path from (SELECT image_path, x.sellingScore from image_paths INNER JOIN (SELECT productID, sellingScore from product ORDER BY sellingScore DESC LIMIT 10)as x ON image_paths.productID = x.productID) as y ORDER BY sellingScore DESC";
 	}
 	// echo " After If. Statement: $sql";
 
