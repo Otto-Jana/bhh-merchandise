@@ -99,10 +99,14 @@ body {
     width: 380px;
     flex-grow: 0;
     margin-right: -40px;
-    
+    transition: ease-out 0.1s;
 
 }
 
+.tile:hover {
+    transform: scale(1.025);
+  }
+  
 .login-window {
     margin-top: 180px;
     height: 658px;
